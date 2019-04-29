@@ -1,0 +1,686 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Periodic Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="elements.js"></script>
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Interactive Periodic Table</h1>
+        <a href="#" class="close"></a>
+    </header>
+    <div id="info"></div>
+    <div id="container">
+        <div id="table-holder">
+            <div id="dialog"></div>
+            <div class="element non-metal" data-key="H">
+                <p>1</p>
+                <h1>H</h1>
+                <p>1.008</p>
+            </div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element noble-gas" data-key="He">
+                <p>2</p>
+                <h1>He</h1>
+                <p>4.003</p>
+            </div>
+            
+            <div class="element alkali-metal" data-key="Li">
+                <p>3</p>
+                <h1>Li</h1>
+                <p>6.941</p>
+            </div>
+            <div class="element alkaline-earth" data-key="Be">
+                <p>4</p>
+                <h1>Be</h1>
+                <p>9.012</p>
+            </div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element semi-metal" data-key="B">
+                <p>5</p>
+                <h1>B</h1>
+                <p>10.811</p>
+            </div>
+            <div class="element non-metal" data-key="C">
+                <p>6</p>
+                <h1>C</h1>
+                <p>12.011</p>
+            </div>
+            <div class="element non-metal" data-key="N">
+                <p>7</p>
+                <h1>N</h1>
+                <p>14.007</p>
+            </div>
+            <div class="element non-metal" data-key="O">
+                <p>8</p>
+                <h1>O</h1>
+                <p>15.999</p>
+            </div>
+            <div class="element halogen" data-key="F">
+                <p>9</p>
+                <h1>F</h1>
+                <p>18.998</p>
+            </div>
+            <div class="element noble-gas" data-key="Ne">
+                <p>10</p>
+                <h1>Ne</h1>
+                <p>20.180</p>
+            </div>
+            
+            <div class="element alkali-metal" data-key="Na">
+                <p>11</p>
+                <h1>Na</h1>
+                <p>22.990</p>
+            </div>
+            <div class="element alkaline-earth" data-key="Mg">
+                <p>12</p>
+                <h1>Mg</h1>
+                <p>24.305</p>
+            </div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element basic-metal"  data-key="Al">
+                <p>13</p>
+                <h1>Al</h1>
+                <p>26.982</p>
+            </div>
+            <div class="element semi-metal" data-key="Si">
+                <p>14</p>
+                <h1>Si</h1>
+                <p>28.086</p>
+            </div>
+            <div class="element non-metal" data-key="P">
+                <p>15</p>
+                <h1>P</h1>
+                <p>30.974</p>
+            </div>
+            <div class="element non-metal" data-key="S">
+                <p>16</p>
+                <h1>S</h1>
+                <p>32.066</p>
+            </div>
+            <div class="element halogen" data-key="Cl">
+                <p>17</p>
+                <h1>Cl</h1>
+                <p>35.453</p>
+            </div>
+            <div class="element noble-gas" data-key="A">
+                <p>18</p>
+                <h1>A</h1>
+                <p>39.948</p>
+            </div>
+            
+            <div class="element alkali-metal" data-key="K">
+                <p>19</p>
+                <h1>K</h1>
+                <p>39.098</p>
+            </div>
+            <div class="element alkaline-earth" data-key="Ca">
+                <p>20</p>
+                <h1>Ca</h1>
+                <p>40.078</p>
+            </div>
+            <div class="element transition-metal" data-key="Sc">
+                <p>21</p>
+                <h1>Sc</h1>
+                <p>44.956</p>
+            </div>
+            <div class="element transition-metal" data-key="Ti">
+                <p>22</p>
+                <h1>Ti</h1>
+                <p>47.88</p>
+            </div>
+            <div class="element transition-metal" data-key="V">
+                <p>23</p>
+                <h1>V</h1>
+                <p>50.942</p>
+            </div>
+            <div class="element transition-metal" data-key="Cr">
+                <p>24</p>
+                <h1>Cr</h1>
+                <p>51.996</p>
+            </div>
+            <div class="element transition-metal" data-key="Mn">
+                <p>25</p>
+                <h1>Mn</h1>
+                <p>54.938</p>
+            </div>
+            <div class="element transition-metal" data-key="Fe">
+                <p>26</p>
+                <h1>Fe</h1>
+                <p>55.933</p>
+            </div>
+            <div class="element transition-metal" data-key="Co">
+                <p>27</p>
+                <h1>Co</h1>
+                <p>58.933</p>
+            </div>
+            <div class="element transition-metal" data-key="Ni">
+                <p>28</p>
+                <h1>Ni</h1>
+                <p>58.693</p>
+            </div>
+            <div class="element transition-metal" data-key="Cu">
+                <p>29</p>
+                <h1>Cu</h1>
+                <p>63.546</p>
+            </div>
+            <div class="element transition-metal" data-key="Zn">
+                <p>30</p>
+                <h1>Zn</h1>
+                <p>65.39</p>
+            </div>
+            <div class="element basic-metal" data-key="Ga">
+                <p>31</p>
+                <h1>Ga</h1>
+                <p>69.732</p>
+            </div>
+            <div class="element semi-metal" data-key="Ge">
+                <p>32</p>
+                <h1>Ge</h1>
+                <p>69.732</p>
+            </div>
+            <div class="element semi-metal" data-key="As">
+                <p>33</p>
+                <h1>As</h1>
+                <p>74.922</p>
+            </div>
+            <div class="element non-metal" data-key="Se"> 
+                <p>34</p>
+                <h1>Se</h1>
+                <p>78.972</p>
+            </div>
+            <div class="element halogen" data-key="Br">
+                <p>35</p>
+                <h1>Br</h1>
+                <p>79.904</p>
+            </div>
+            <div class="element noble-gas" data-key="Kr">
+                <p>36</p>
+                <h1>Kr</h1>
+                <p>84.80</p>
+            </div>
+            
+            <div class="element alkali-metal" data-key="Rb">
+                <p>37</p>
+                <h1>Rb</h1>
+                <p>84.468</p>
+            </div>
+            <div class="element alkaline-earth" data-key="Sr">
+                <p>38</p>
+                <h1>Sr</h1>
+                <p>87.62</p>
+            </div>
+            <div class="element transition-metal" data-key="Y">
+                <p>39</p>
+                <h1>Y</h1>
+                <p>88.906</p>
+            </div>
+            <div class="element transition-metal" data-key="Zr">
+                <p>40</p>
+                <h1>Zr</h1>
+                <p>91.224</p>
+            </div>
+            <div class="element transition-metal" data-key="Nb">
+                <p>41</p>
+                <h1>Nb</h1>
+                <p>92.906</p>
+            </div>
+            <div class="element transition-metal" data-key="Mo">
+                <p>42</p>
+                <h1>Mo</h1>
+                <p>95.95</p>
+            </div>
+            <div class="element transition-metal" data-key="Tc">
+                <p>43</p>
+                <h1>Tc</h1>
+                <p>98.907</p>
+            </div>
+            <div class="element transition-metal" data-key="Ru">
+                <p>44</p>
+                <h1>Ru</h1>
+                <p>101.07</p>
+            </div>
+            <div class="element transition-metal" data-key="Rh">
+                <p>45</p>
+                <h1>Rh</h1>
+                <p>102.906</p>
+            </div>
+            <div class="element transition-metal" data-key="Pd">
+                <p>46</p>
+                <h1>Pd</h1>
+                <p>106.42</p>
+            </div>
+            <div class="element transition-metal" data-key="Ag">
+                <p>47</p>
+                <h1>Ag</h1>
+                <p>107.868</p>
+            </div>
+            <div class="element transition-metal" data-key="Cd">
+                <p>48</p>
+                <h1>Cd</h1>
+                <p>112.411</p>
+            </div>
+            <div class="element basic-metal" data-key="In">
+                <p>49</p>
+                <h1>In</h1>
+                <p>114.818</p>
+            </div>
+            <div class="element basic-metal" data-key="Sn">
+                <p>50</p>
+                <h1>Sn</h1>
+                <p>118.71</p>
+            </div>
+            <div class="element semi-metal" data-key="Sb">
+                <p>51</p>
+                <h1>Sb</h1>
+                <p>121.760</p>
+            </div>
+            <div class="element semi-metal" data-key="Te">
+                <p>52</p>
+                <h1>Te</h1>
+                <p>127.6</p>
+            </div>
+            <div class="element halogen" data-key="I">
+                <p>53</p>
+                <h1>I</h1>
+                <p>126.904</p>
+            </div>
+            <div class="element noble-gas" data-key="Xe">
+                <p>54</p>
+                <h1>Xe</h1>
+                <p>131.29</p>
+            </div>
+            
+            <div class="element alkali-metal" data-key="Cs">
+                <p>55</p>
+                <h1>Cs</h1>
+                <p>132.905</p>
+            </div>
+            <div class="element alkaline-earth" data-key="Ba">
+                <p>56</p>
+                <h1>Ba</h1>
+                <p>137.327</p>
+            </div>
+            <div class="element hidden"></div>
+            <div class="element transition-metal" data-key="Hf">
+                <p>72</p>
+                <h1>Hf</h1>
+                <p>178.49</p>
+            </div>
+            <div class="element transition-metal" data-key="Ta">
+                <p>73</p>
+                <h1>Ta</h1>
+                <p>180.948</p>
+            </div>
+            <div class="element transition-metal" data-key="W">
+                <p>74</p>
+                <h1>W</h1>
+                <p>183.85</p>
+            </div>
+            <div class="element transition-metal" data-key="Re">
+                <p>75</p>
+                <h1>Re</h1>
+                <p>186.207</p>
+            </div>
+            <div class="element transition-metal" data-key="Os">
+                <p>76</p>
+                <h1>Os</h1>
+                <p>190.23</p>
+            </div>
+            <div class="element transition-metal" data-key="Ir">
+                <p>77</p>
+                <h1>Ir</h1>
+                <p>192.22</p>
+            </div>
+            <div class="element transition-metal" data-key="Pt">
+                <p>78</p>
+                <h1>Pt</h1>
+                <p>195.08</p>
+            </div>
+            <div class="element transition-metal" data-key="Au">
+                <p>79</p>
+                <h1>Au</h1>
+                <p>196.967</p>
+            </div>
+            <div class="element transition-metal" data-key="Hg">
+                <p>80</p>
+                <h1>Hg</h1>
+                <p>200.59</p>
+            </div>
+            <div class="element basic-metal" data-key="Tl">
+                <p>81</p>
+                <h1>Tl</h1>
+                <p>204.383</p>
+            </div>
+            <div class="element basic-metal" data-key="Pb">
+                <p>82</p>
+                <h1>Pb</h1>
+                <p>207.2</p>
+            </div>
+            <div class="element basic-metal" data-key="Bi">
+                <p>83</p>
+                <h1>Bi</h1>
+                <p>208.980</p>
+            </div>
+            <div class="element semi-metal" data-key="Po">
+                <p>84</p>
+                <h1>Po</h1>
+                <p>[208.982]</p>
+            </div>
+            <div class="element halogen" data-key="At">
+                <p>85</p>
+                <h1>At</h1>
+                <p>209.987</p>
+            </div>
+            <div class="element noble-gas" data-key="Rn">
+                <p>86</p>
+                <h1>Rn</h1>
+                <p>222.018</p>
+            </div>
+            
+            <div class="element alkali-metal" data-key="Fr">
+                <p>87</p>
+                <h1>Fr</h1>
+                <p>223.020</p>
+            </div>
+            <div class="element alkaline-earth" data-key="Ra">
+                <p>88</p>
+                <h1>Ra</h1>
+                <p>226.025</p>
+            </div>
+            <div class="element hidden"></div>
+            <div class="element transition-metal" data-key="Rf">
+                <p>104</p>
+                <h1>Rf</h1>
+                <p>[261]</p>
+            </div>
+            <div class="element transition-metal" data-key="Db">
+                <p>105</p>
+                <h1>Db</h1>
+                <p>[262]</p>
+            </div>
+            <div class="element transition-metal" data-key="Sg">
+                <p>106</p>
+                <h1>Sg</h1>
+                <p>[266]</p>
+            </div>
+            <div class="element transition-metal" data-key="Bh">
+                <p>107</p>
+                <h1>Bh</h1>
+                <p>[264]</p>
+            </div>
+            <div class="element transition-metal" data-key="Hs">
+                <p>108</p>
+                <h1>Hs</h1>
+                <p>[269]</p>
+            </div>
+            <div class="element transition-metal" data-key="Mt">
+                <p>109</p>
+                <h1>Mt</h1>
+                <p>[268]</p>
+            </div>
+            <div class="element transition-metal" data-key="Ds">
+                <p>110</p>
+                <h1>Ds</h1>
+                <p>[269]</p>
+            </div>
+            <div class="element transition-metal" data-key="Rg">
+                <p>111</p>
+                <h1>Rg</h1>
+                <p>[272]</p>
+            </div>
+            <div class="element transition-metal" data-key="Cn">
+                <p>112</p>
+                <h1>Cn</h1>
+                <p>[277]</p>
+            </div>
+            <div class="element basic-metal" data-key="Uut">
+                <p>113</p>
+                <h1>Uut</h1>
+                <p>unknown</p>
+            </div>
+            <div class="element basic-metal" data-key="Fl">
+                <p>114</p>
+                <h1>Fl</h1>
+                <p>[289]</p>
+            </div>
+            <div class="element basic-metal" data-key="Uup">
+                <p>115</p>
+                <h1>Uup</h1>
+                <p>unknown</p>
+            </div>
+            <div class="element basic-metal" data-key="Lv">
+                <p>116</p>
+                <h1>Lv</h1>
+                <p>[298]</p>
+            </div>
+            <div class="element halogen" data-key="Uus">
+                <p>117</p>
+                <h1>Uus</h1>
+                <p>unknown</p>
+            </div>
+            <div class="element noble-gas" data-key="Uuo">
+                <p>118</p>
+                <h1>Uuo</h1>
+                <p>unknown</p>
+            </div>
+            
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element lanthanide" data-key="La">
+                <p>57</p>
+                <h1>La</h1>
+                <p>138.906</p>
+            </div>
+            <div class="element lanthanide" data-key="Ce">
+                <p>58</p>
+                <h1>Ce</h1>
+                <p>140.115</p>
+            </div>
+            <div class="element lanthanide" data-key="Pr">
+                <p>59</p>
+                <h1>Pr</h1>
+                <p>140.908</p>
+            </div>
+            <div class="element lanthanide" data-key="Nd">
+                <p>60</p>
+                <h1>Nd</h1>
+                <p>144.24</p>
+            </div>
+            <div class="element lanthanide" data-key="Pm">
+                <p>61</p>
+                <h1>Pm</h1>
+                <p>144.913</p>
+            </div>
+            <div class="element lanthanide" data-key="Sm">
+                <p>62</p>
+                <h1>Sm</h1>
+                <p>150.36</p>
+            </div>
+            <div class="element lanthanide" data-key="Eu">
+                <p>63</p>
+                <h1>Eu</h1>
+                <p>151.966</p>
+            </div>
+            <div class="element lanthanide" data-key="Gd">
+                <p>64</p>
+                <h1>Gd</h1>
+                <p>157.25</p>
+            </div>
+            <div class="element lanthanide" data-key="Tb">
+                <p>65</p>
+                <h1>Tb</h1>
+                <p>158.925</p>
+            </div>
+            <div class="element lanthanide" data-key="Dy">
+                <p>66</p>
+                <h1>Dy</h1>
+                <p>162.50</p>
+            </div>
+            <div class="element lanthanide" data-key="Ho">
+                <p>67</p>
+                <h1>Ho</h1>
+                <p>164.930</p>
+            </div>
+            <div class="element lanthanide" data-key="Er">
+                <p>68</p>
+                <h1>Er</h1>
+                <p>167.26</p>
+            </div>
+            <div class="element lanthanide" data-key="Tm">
+                <p>69</p>
+                <h1>Tm</h1>
+                <p>168.93</p>
+            </div>
+            <div class="element lanthanide" data-key="Yb">
+                <p>70</p>
+                <h1>Yb</h1>
+                <p>173.04</p>
+            </div>
+            <div class="element lanthanide" data-key="Lu">
+                <p>71</p>
+                <h1>Lu</h1>
+                <p>174.967</p>
+            </div>
+            
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element hidden"></div>
+            <div class="element actinide" data-key="Li">
+                <p>89</p>
+                <h1>Ac</h1>
+                <p>227.028</p>
+            </div>
+            <div class="element actinide" data-key="Th">
+                <p>90</p>
+                <h1>Th</h1>
+                <p>232.038</p>
+            </div>
+            <div class="element actinide" data-key="Pa">
+                <p>91</p>
+                <h1>Pa</h1>
+                <p>231.036</p>
+            </div>
+            <div class="element actinide" data-key="U">
+                <p>92</p>
+                <h1>U</h1>
+                <p>238.029</p>
+            </div>
+            <div class="element actinide" data-key="Np">
+                <p>93</p>
+                <h1>Np</h1>
+                <p>237.048</p>
+            </div>
+            <div class="element actinide" data-key="Pu">
+                <p>94</p>
+                <h1>Pu</h1>
+                <p>244.064</p>
+            </div>
+            <div class="element actinide" data-key="Am">
+                <p>95</p>
+                <h1>Am</h1>
+                <p>243.061</p>
+            </div>
+            <div class="element actinide" data-key="Cm">
+                <p>96</p>
+                <h1>Cm</h1>
+                <p>247.070</p>
+            </div>
+            <div class="element actinide" data-key="Bk">
+                <p>97</p>
+                <h1>Bk</h1>
+                <p>247.070</p>
+            </div>
+            <div class="element actinide" data-key="Cf">
+                <p>98</p>
+                <h1>Cf</h1>
+                <p>251.080</p>
+            </div>
+            <div class="element actinide" data-key="Es">
+                <p>99</p>
+                <h1>Es</h1>
+                <p>[254]</p>
+            </div>
+            <div class="element actinide" data-key="Fm">
+                <p>100</p>
+                <h1>Fm</h1>
+                <p>257.095</p>
+            </div>
+            <div class="element actinide" data-key="Md">
+                <p>101</p>
+                <h1>Md</h1>
+                <p>258.1</p>
+            </div>
+            <div class="element actinide" data-key="No">
+                <p>102</p>
+                <h1>No</h1>
+                <p>259.101</p>
+            </div>
+            <div class="element actinide" data-key="Lr">
+                <p>103</p>
+                <h1>Lr</h1>
+                <p>[262]</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
